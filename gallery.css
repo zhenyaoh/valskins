@@ -1,0 +1,136 @@
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    padding: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.weapon-card {
+    background-color: #28242a;
+    border-radius: 12px;
+    padding: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    width: 250px;
+    height: auto;
+}
+
+.weapon-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(225, 213, 255, 0.4);
+}
+
+.container {
+    max-width: 1500px;
+    background-color: #1e1e27;
+    margin: 0 auto;
+    display: block;
+    border-radius: 13px;
+}
+
+.weapon-image {
+    background: none;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+}
+
+.weapon-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.weapon-info h3 {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+    font-weight: lighter;
+    text-align: center;
+    font-family: 'Valorant';
+}
+
+.weapon-price {
+    font-size: 13px;
+    color: #b4b4b4;
+    margin: 0;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    gap: 4px;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    border-radius: 12px;
+}
+
+.filter-btn.active {
+    background-color: #ff3737;
+    color: white;
+    font-family: 'Valorant'
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    background-color: #28242a;
+    color: rgb(206, 206, 206);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Valorant';
+}
+
+footer {
+    font-family: 'Valorant3';
+}
+
+.search-section {
+    margin: 20px auto;
+    max-width: 650px;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+.search-section::before {
+    content: "🔍";
+    position: absolute;
+    font-size: 18px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background-color:#28242a;
+    font-family: 'Valorant';
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #7c6ca0;
+    box-shadow: 0 0 0 3px rgba(124, 108, 160, 0.2);
+    color: white;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
+    vertical-align: middle;
+}
+
